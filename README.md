@@ -8,6 +8,9 @@ I have added some more ASM commands just for "obfuscation" for the syscalls.
 To use, just simply replace without shellcode, that is in .text segment on purpose although it will work in any other segments.  
 I will let you figure out why.  
 
+The custom method of "memcpy" is replaced with NtWriteVirtualMemory since it did not work very well with certain EDRs but if you still  
+want to use it, just comment the line of NtWriteVirtualMemory and uncomment the VxMoveMemory.
+
 ### Credits / References
 ##### Reenz0h from @SEKTOR7net (Creator of the HalosGate technique )
   + This HalosGate project is based on the work of Reenz0h.
