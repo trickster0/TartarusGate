@@ -5,11 +5,9 @@
 Hell's Gate evolved to Halo's Gate to bypass EDRs by unhooking some of them and now it turned to Tartarus' Gate to handle even more WINAPI hooking methods.  
 
 I have added some more ASM commands just for "obfuscation" for the syscalls.  
-To use, just simply replace without shellcode, that is in .text segment on purpose although it will work in any other segments.  
-I will let you figure out why.  
+To use, just simply replace without shellcode, that is in .text segment on purpose although it will work in any other segments. I will let you figure out why.  
 
-The custom method of "memcpy" is replaced with NtWriteVirtualMemory since it did not work very well with certain EDRs but if you still  
-want to use it, just comment the line of NtWriteVirtualMemory and uncomment the VxMoveMemory.
+The custom method of "memcpy" is replaced with NtWriteVirtualMemory since it did not work very well with certain EDRs but if you still want to use it, just comment the line of NtWriteVirtualMemory and uncomment the VxMoveMemory.
 
 ### Credits / References
 ##### Reenz0h from @SEKTOR7net (Creator of the HalosGate technique )
