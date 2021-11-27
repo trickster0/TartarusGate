@@ -1,5 +1,7 @@
 # Tartarus' Gate - Bypassing EDRs
 
+### Description
+
 Hell's Gate evolved to Halo's Gate to bypass EDRs by unhooking some of them and now it turned to Tartarus' Gate to handle even more WINAPI hooking methods.  
 
 I have added some more ASM commands just for "obfuscation" for the syscalls.  
