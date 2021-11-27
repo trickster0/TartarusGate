@@ -66,7 +66,6 @@ INT wmain() {
 
 	PTEB pCurrentTeb = RtlGetThreadEnvironmentBlock();
 	PPEB pCurrentPeb = pCurrentTeb->ProcessEnvironmentBlock;
-	pCurrentPeb->BeingDebugged = 1;
 	if (!pCurrentPeb || !pCurrentTeb || pCurrentPeb->OSMajorVersion != 0xA)
 		return 0x1;
 
