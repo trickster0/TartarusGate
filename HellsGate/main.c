@@ -26,8 +26,6 @@ typedef struct _VX_TABLE {
 	VX_TABLE_ENTRY NtAllocateVirtualMemory;
 	VX_TABLE_ENTRY NtProtectVirtualMemory;
 	VX_TABLE_ENTRY NtCreateThreadEx;
-	//VX_TABLE_ENTRY NtQueueApcThread;
-	//VX_TABLE_ENTRY NtResumeThread;
 	VX_TABLE_ENTRY NtWriteVirtualMemory;
 	VX_TABLE_ENTRY NtWaitForSingleObject;
 } VX_TABLE, * PVX_TABLE;
@@ -150,7 +148,6 @@ BOOL GetVxTableEntry(PVOID pModuleBase, PIMAGE_EXPORT_DIRECTORY pImageExportDire
 			// First opcodes should be :
 			//    MOV R10, RCX
 			//    MOV RAX, <syscall>
-			printf("4th byte of function: %x\n", *((PBYTE)pFunctionAddress+3));
 			if (*((PBYTE)pFunctionAddress) == 0x4c
 				&& *((PBYTE)pFunctionAddress + 1) == 0x8b
 				&& *((PBYTE)pFunctionAddress + 2) == 0xd1
