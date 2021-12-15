@@ -1,5 +1,9 @@
 # Tartarus' Gate - Bypassing EDRs
 
+<p align="center">
+    <img height="500" alt="OffensiveRust" src="https://github.com/trickster0/TartarusGate/raw/master/tartarus.jpg">
+</p>
+
 ### Description
 
 Hell's Gate evolved to Halo's Gate to bypass EDRs by unhooking some of them and now it turned to Tartarus' Gate to handle even more WINAPI hooking methods.  
